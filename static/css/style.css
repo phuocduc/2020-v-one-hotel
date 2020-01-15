@@ -1,0 +1,441 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navibar{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+.menu-navi-right{
+
+    place-content: flex-end;
+    margin-right: 75px;
+}
+
+
+.brand-nav{
+    margin-left: 75px;
+}
+
+
+
+@media(max-width:763px)
+{
+    .brand-nav{
+        margin-left:5px;
+    }
+}
+
+.menu-navi-up{
+    place-content: flex-end;
+}
+
+.menu-margin{
+    margin-right:25px;
+    font-weight: 500;
+}
+
+.menu-margin-end{
+    font-weight: 500;
+}
+
+
+.slide{
+    height: 645px;
+    background-image: url(../img/top/slide-head.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-cover{
+    margin-top:172px;
+}
+
+.slide-cover-text{
+    font-family: 'Gelasio', serif;
+    font-size:38pt;
+    color:#ffffff;
+}
+
+
+
+.slide-cover-smalltext{
+    font-family: 'Gelasio', serif;
+    font-size:16pt;
+    color:#ffffff;
+    margin-top:15px;
+}
+
+.form-slide{
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 18px;
+}
+
+
+.labelform{
+    font-family: 'Gelasio', serif;
+    font-size:16pt;
+    color:#ffffff;
+}
+
+.form-input-el{
+    border-bottom: solid 0.5px white;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    padding: 2px;
+}
+
+.input-field{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@media (max-width:763px){
+    .slide-cover-text{
+        font-size: 16pt;
+    }
+    .slide-cover-smalltext{
+        font-size: 11pt;
+        margin-bottom: 20px;
+    }
+
+    .form-slide{
+    flex-direction: column;
+    align-items: center;
+    }
+    .labelform{
+        font-size: 11pt;
+    }
+    .form-group{
+        margin-bottom:10%;
+        width: 90%;
+    }
+    .form-number{
+        margin-bottom: 0;
+    }
+
+}
+
+
+::placeholder{
+    color:white;
+}
+
+.open-button{
+    pointer-events: none;
+    color: transparent;
+    position: relative;
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    color:white;
+}
+
+.fa-icon{
+    font-size: 17pt;
+    outline: none;
+}
+
+
+input[type="date"] {
+    position: relative;
+    padding: 0px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+  
+  input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'FontAwesome';
+    content: '';
+    /* This is the calendar icon in FontAwesome */
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    color: white;
+  }
+
+  .input-number{
+      background-color: transparent;
+      border:1px solid white;
+      color: white;
+  }
+
+  .search-btn{
+    height: 43px;
+    width: 112px;
+    align-self: center;
+    margin-top: 17px;
+    background-color: #d7d7d7;
+  }
+
+  .form-group{
+      width: 194px;
+  }
+
+
+  .slide-movie{
+      height: 647px;
+      display: flex;
+      
+  }
+
+
+  .welcome--artical{
+      display: flex;
+      flex-direction: column;
+      padding: 75px;
+  }
+
+.welcome-stext{
+    max-width: 360px;
+    width:100%;
+    height: 147px;
+}
+
+.welcome-paratext{
+    color:#b9b9b9;
+    text-align: center;
+    z-index: 10;
+}
+
+.welcome-textenjoy{
+    font-size: 45pt;
+    z-index: 11;
+    margin-top:-36px;
+    line-height: 58px;
+    margin-bottom: 30px;
+}
+
+.welcome--video{
+    padding: 0;
+    padding-top: 25px;
+}
+
+.welcome-video-img{
+    width: 100%;
+}
+
+@media (max-width:763px){
+    .slide-movie{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .welcome--artical{
+        padding: 20px;
+    }
+    .welcome-textenjoy{
+        text-align: center;
+    font-size: 29pt;
+    }
+    .welcome--video{
+        padding:0px;
+    }
+}
+
+
+.nav-middle{
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu-middle{
+    display: flex;
+    font-size: 19pt;
+    margin-top:52px;
+}
+
+.nav-link-hover:hover{
+    color:green !important;
+    text-decoration: underline;
+}
+.brand-middle-img{
+    position: relative;
+}
+.brand-middle-title{
+    margin-top: -86px;
+    font-size: 47pt;
+}
+
+
+@media (max-width: 763px)
+{
+    .nav-menu-middle{
+        align-items: flex-start;
+        margin-top:0;
+        line-height: 17pt;
+    }
+    .brand-middle-img{
+        width: 200px;
+    }
+    .brand-middle-title{
+        font-size: 27px;
+        margin-top:-46px;
+    }
+    .carousel-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.slider-product{
+    height: 526px;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel-inner{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+
+.card-text{
+    color:#b1b1b1;
+}
+
+.btn-price{
+    background: transparent;
+    border: solid #c19b76;
+    color: #c19b76;
+    padding: 8px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.btn-price:hover{
+    background-color: #c19b76;
+    color:white;
+}
+
+.btn-price:focus{
+    outline: 0;
+}
+
+.carousel-icon{
+    background-color: #5ecb16;
+    width: 40px;
+    height: 50px;
+}
+
+
+
+
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+
+.card-header{color:dodgerblue}
+
+#navbar.scroll{
+    background-color: #ffffffa1;
+    padding:0px;
+    transition: ease-in 0.7s;
+}
+
+
+.stick_one, .stick_second, .stick_third{ 
+    font-size: 15pt;
+    border-bottom: 1px solid ;
+    border-top: 1px solid ;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 10%;
+    z-index: 9;
+    padding: 12px;
+    font-weight: 500;
+    color: #D2A257;
+}
+
+.stick_one:after{
+    white-space: pre;
+    content:'Tìm Kiếm \A Kỳ Nghỉ';
+    
+}
+.stick_second:after{
+    white-space: pre;
+    content:'Thưởng Thức \A Cuộc Sống';
+}
+.stick_third:after{
+    white-space: pre;
+    content:'Ý Tưởng Khu\A Nghĩ Dưỡng';
+}
+
+@media (max-width: 673px)
+{
+    .stick_one, .stick_second, .stick_third{ 
+        display: none;
+    }
+}
+
+
+.img-icon{
+    width: 30px !important;
+    display: inline !important;
+}
+
+
+
+.grid-info{
+    height: 814px;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.card-grid{
+    width: 315.7px;
+    height: 407px;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.grid-img-icon{
+    width:30%;
+}
+
+.card-grid > h5{
+    color:white;
+}
+
