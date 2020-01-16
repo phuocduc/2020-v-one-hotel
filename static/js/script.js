@@ -10,16 +10,28 @@ window.onscroll = () => {
     img_logo.style.width="100%"
   }
   const stick = document.querySelector("#stick");
-  if(this.scrollY>=250 && this.scrollY<450){
+  if(this.scrollY>=50 && this.scrollY<366){
       stick.className = "stick_one"
   }
-  else if(this.scrollY>=450 && this.scrollY<1000)
+  else if(this.scrollY>=366 && this.scrollY<1000)
   {
     stick.className = "stick_second"
   }
-  else if (this.scrollY >=1000)
+  else if (this.scrollY >=1000 && this.scrollY<1900)
   {
-      stick.className = "stick_third"
+    stick.className = "stick_third"
+  }
+  else if (this.scrollY >=1900 && this.scrollY<2820)
+  {
+    stick.className = "stick_fourth"
+  }
+  else if (this.scrollY >=2820 && this.scrollY<3350)
+  {
+    stick.className = "stick_fifth"
+    console.log(this.scrollY,'5')
+  }
+  else{
+    stick.className=""
   }
 };
 

@@ -369,41 +369,6 @@ input[type="date"] {
 }
 
 
-.stick_one, .stick_second, .stick_third{ 
-    font-size: 15pt;
-    border-bottom: 1px solid ;
-    border-top: 1px solid ;
-    position: fixed;
-    top: 50%;
-    right: 0;
-    width: 10%;
-    z-index: 9;
-    padding: 12px;
-    font-weight: 500;
-    color: #D2A257;
-}
-
-.stick_one:after{
-    white-space: pre;
-    content:'Tìm Kiếm \A Kỳ Nghỉ';
-    
-}
-.stick_second:after{
-    white-space: pre;
-    content:'Thưởng Thức \A Cuộc Sống';
-}
-.stick_third:after{
-    white-space: pre;
-    content:'Ý Tưởng Khu\A Nghĩ Dưỡng';
-}
-
-@media (max-width: 673px)
-{
-    .stick_one, .stick_second, .stick_third{ 
-        display: none;
-    }
-}
-
 
 .img-icon{
     width: 30px !important;
@@ -413,7 +378,8 @@ input[type="date"] {
 
 
 .grid-info{
-    height: 814px;
+    height: 100%;
+    min-height: 814px;
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
@@ -435,7 +401,238 @@ input[type="date"] {
     width:30%;
 }
 
-.card-grid > h5{
+.grid-wrap > h5{
     color:white;
+    font-weight: 500;
 }
 
+
+.grid-wrap{
+    background-color: #00000073;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.promotion{
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-text{
+    margin-top: -53px;
+    font-size: 46pt;
+    font-weight: 650;
+}
+
+
+.schedule{
+    height: 100%;
+    min-height: 434px;
+    flex-wrap: wrap;
+    line-height: 24pt;
+}
+
+
+
+.calendar{
+    width:140px;
+    height: 140px;
+    background-color: #5ecb16;
+    align-items: center;
+    line-height: 1;
+    
+}
+
+.calendar:nth-child(1)
+{
+    margin-left: 5px ;
+}
+
+.calendar-number{
+    color: white;
+    font-size: 40pt;
+    font-weight: 1000;
+    font-family: serif;
+}
+
+.calendar-text{
+    color: white;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.calendar-text-new{
+    color: white;
+    font-size: 39pt;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width:673px)
+{
+    .promotion-img{
+
+        width: 333px;
+    }
+
+    .schedule{
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+    .calendar{
+        height: 90px;
+    }
+    .calendar-number{
+        font-size:30pt;
+    }
+    .calendar-text{
+        font-size: 10pt;
+    }
+    .calendar-text-new{
+        font-size: 28pt;
+    }
+}
+
+.google-map{
+    display: flex;
+    min-height: 350px;
+    height: 100%;
+}
+
+.address{
+    background-color: #7ed346;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.address-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.frame-map{
+
+    width:100%;
+    height:100%;
+}
+
+.btn-map{
+    height: 55px;
+    color: #7ed346;
+}
+
+@media (max-width:673px)
+{
+    .google-map{
+        flex-direction: column;
+    }
+    .frame-map{
+        height: 262px;
+    }
+    .address-wrap{
+        height: 300px;
+    }
+    .bgfooter-wrapcolor{
+        padding: 35px;
+    }
+
+    .lastdiv{
+        flex-direction: column;
+    }
+
+    .last-text{
+        margin-bottom: 49px;
+        font-size: 11pt;
+        margin-top: 26px;
+    }
+ 
+}
+
+.footer{
+    min-height: 100%;
+    height: 491px;
+    
+}
+
+.bgfooter-wrapcolor{
+    background-color: #00000061;
+    height: 100%;
+}
+
+hr{
+    width: 48%;
+    height: 1px;
+    background-color: white;
+}
+
+.bgfooter-wrapcolor{
+    color:white;
+    align-items: center;
+}
+
+.footer-title{
+    font-size: 36pt;
+    font-weight: 500;
+}
+
+.lastdiv{
+    height: 89px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.stick_one, .stick_second, .stick_third,.stick_fourth,
+.stick_fifth{ 
+    font-size: 15pt;
+    border-bottom: 1px solid ;
+    border-top: 1px solid ;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 10%;
+    z-index: 9;
+    padding: 12px;
+    font-weight: 500;
+    padding-left: 1px;
+    color: #D2A257;
+    transition: ease-in 0.5s;
+}
+
+.stick_one:after{
+    white-space: pre;
+    content:'Tìm Kiếm \A Kỳ Nghỉ';
+    
+}
+.stick_second:after{
+    white-space: pre;
+    content:'Thưởng Thức \A Cuộc Sống';
+}
+.stick_third:after{
+    white-space: pre;
+    content:'Ý Tưởng Khu\A Nghĩ Dưỡng';
+}
+.stick_fourth:after{
+    white-space: pre;
+    content:'Tiện Ích\A Khách Sạn';
+}
+.stick_fifth:after{
+    white-space: pre;
+    content:'Lịch Trình';
+}
+
+@media (max-width: 673px)
+{
+    .stick_one, .stick_second, .stick_third,
+    .stick_fourth, .stick_fifth{ 
+        display: none;
+    }
+}
